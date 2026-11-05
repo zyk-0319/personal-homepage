@@ -1,0 +1,78 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="多传感器融合目标检测与场景理解系统架构图">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#e7f0fb"/></linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#1e3a8a" flood-opacity=".10"/></filter>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9z" fill="#2563eb"/></marker>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity=".28" stroke="#cbd5e1">
+    <path d="M80 90h1120M80 180h1120M80 270h1120M80 360h1120M80 450h1120M80 540h1120M80 630h1120"/>
+    <path d="M160 60v640M320 60v640M480 60v640M640 60v640M800 60v640M960 60v640M1120 60v640"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="68" y="82" width="258" height="164" rx="22" fill="#fff" stroke="#bfdbfe" stroke-width="2"/>
+    <circle cx="197" cy="128" r="24" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/><circle cx="197" cy="128" r="9" fill="#2563eb"/>
+    <text x="197" y="184" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="20" font-weight="700" fill="#0f172a">Camera</text>
+    <text x="197" y="212" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="15" fill="#64748b">纹理 · 语义 · 车道线索</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="68" y="280" width="258" height="164" rx="22" fill="#fff" stroke="#bfdbfe" stroke-width="2"/>
+    <circle cx="197" cy="326" r="24" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/><path d="M179 338L189 318L197 330L205 318L215 338Z" fill="#2563eb"/>
+    <text x="197" y="382" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="20" font-weight="700" fill="#0f172a">LiDAR</text>
+    <text x="197" y="410" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="15" fill="#64748b">深度 · 形状 · 空间结构</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="68" y="478" width="258" height="164" rx="22" fill="#fff" stroke="#bfdbfe" stroke-width="2"/>
+    <circle cx="197" cy="524" r="24" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/><circle cx="197" cy="524" r="14" fill="none" stroke="#2563eb" stroke-width="4"/><circle cx="197" cy="524" r="7" fill="#2563eb"/>
+    <text x="197" y="580" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="20" font-weight="700" fill="#0f172a">Radar</text>
+    <text x="197" y="608" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="15" fill="#64748b">距离 · 速度 · 抗干扰</text>
+  </g>
+  <g fill="none" stroke="#2563eb" stroke-width="5" marker-end="url(#arrow)">
+    <path d="M326 164h76"/>
+    <path d="M326 362h76"/>
+    <path d="M326 560h76"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="420" y="122" width="190" height="476" rx="26" fill="#fff" stroke="#bfdbfe" stroke-width="2"/>
+    <text x="515" y="170" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="19" font-weight="700" fill="#0f172a">预处理层</text>
+    <rect x="450" y="196" width="130" height="48" rx="14" fill="#eff6ff" stroke="#bfdbfe"/><text x="515" y="226" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="16" fill="#1e40af">去噪</text>
+    <rect x="450" y="266" width="130" height="48" rx="14" fill="#eff6ff" stroke="#bfdbfe"/><text x="515" y="296" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="16" fill="#1e40af">校正</text>
+    <rect x="450" y="336" width="130" height="48" rx="14" fill="#eff6ff" stroke="#bfdbfe"/><text x="515" y="366" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="16" fill="#1e40af">配准</text>
+    <rect x="450" y="406" width="130" height="48" rx="14" fill="#eff6ff" stroke="#bfdbfe"/><text x="515" y="436" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="16" fill="#1e40af">切片</text>
+    <text x="515" y="504" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="14" fill="#64748b">统一坐标系</text>
+    <text x="515" y="528" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="14" fill="#64748b">统一时间戳</text>
+  </g>
+  <path d="M610 360h66" fill="none" stroke="#2563eb" stroke-width="5" marker-end="url(#arrow)"/>
+  <g filter="url(#shadow)">
+    <rect x="694" y="102" width="242" height="516" rx="28" fill="#fff" stroke="#bfdbfe" stroke-width="2"/>
+    <text x="815" y="148" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="20" font-weight="700" fill="#0f172a">特征对齐与融合</text>
+    <rect x="722" y="176" width="186" height="86" rx="16" fill="#eff6ff" stroke="#bfdbfe"/>
+    <path d="M742 232l26-25 18 15 24-34 18 24 15-13" fill="none" stroke="#2563eb" stroke-width="4"/>
+    <rect x="722" y="286" width="186" height="86" rx="16" fill="#eff6ff" stroke="#bfdbfe"/>
+    <circle cx="756" cy="329" r="9" fill="#2563eb"/><circle cx="790" cy="315" r="9" fill="#3b82f6"/><circle cx="822" cy="341" r="9" fill="#60a5fa"/><path d="M756 329h34l32 12" stroke="#2563eb" stroke-width="3"/>
+    <rect x="722" y="396" width="186" height="86" rx="16" fill="#eff6ff" stroke="#bfdbfe"/>
+    <path d="M742 454h46M804 454h46M752 430h74M770 478h48" stroke="#2563eb" stroke-width="5" stroke-linecap="round"/>
+    <rect x="722" y="506" width="186" height="72" rx="16" fill="#dbeafe"/>
+    <text x="815" y="548" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="17" font-weight="700" fill="#1e3a8a">Fusion Model</text>
+  </g>
+  <path d="M936 360h68" fill="none" stroke="#2563eb" stroke-width="5" marker-end="url(#arrow)"/>
+  <g filter="url(#shadow)">
+    <rect x="1024" y="86" width="194" height="158" rx="22" fill="#fff" stroke="#bfdbfe" stroke-width="2"/>
+    <rect x="1069" y="112" width="104" height="66" rx="10" fill="none" stroke="#2563eb" stroke-width="4"/><rect x="1104" y="132" width="34" height="24" fill="#2563eb"/>
+    <text x="1121" y="210" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="17" font-weight="700" fill="#0f172a">目标检测</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="1024" y="272" width="194" height="158" rx="22" fill="#fff" stroke="#bfdbfe" stroke-width="2"/>
+    <path d="M1077 366v-26h40v26" fill="none" stroke="#2563eb" stroke-width="4"/><path d="M1131 366v-58h34v58" fill="none" stroke="#3b82f6" stroke-width="4"/>
+    <text x="1121" y="396" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="17" font-weight="700" fill="#0f172a">目标跟踪</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="1024" y="458" width="194" height="158" rx="22" fill="#fff" stroke="#bfdbfe" stroke-width="2"/>
+    <path d="M1054 566c16-16 17-39 0-55 17 9 29 4 42-8-5 20 1 33 16 42-21 1-34 8-42 25-2-10-7-17-16-4z" fill="#2563eb" transform="translate(38 0)"/>
+    <text x="1121" y="596" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="17" font-weight="700" fill="#0f172a">场景理解</text>
+  </g>
+  <g>
+    <rect x="68" y="662" width="430" height="40" rx="20" fill="#fff" stroke="#bfdbfe"/><text x="283" y="688" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="15" fill="#1e40af">对比维度：置信度 · 位置偏差 · 典型失败场景</text>
+  </g>
+</svg>

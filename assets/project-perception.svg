@@ -1,0 +1,76 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="智能驾驶环境感知数据管理与分析平台技术架构图">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#e8f1fb"/></linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#1e3a8a" flood-opacity=".10"/></filter>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9z" fill="#2563eb"/></marker>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity=".30" stroke="#cbd5e1" stroke-width="1">
+    <path d="M80 90h1120M80 180h1120M80 270h1120M80 360h1120M80 450h1120M80 540h1120M80 630h1120"/>
+    <path d="M160 60v640M320 60v640M480 60v640M640 60v640M800 60v640M960 60v640M1120 60v640"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="62" y="46" width="416" height="150" rx="20" fill="#fff" stroke="#bfdbfe" stroke-width="2"/>
+    <rect x="86" y="72" width="72" height="72" rx="18" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+    <circle cx="122" cy="108" r="19" fill="url(#blue)"/>
+    <text x="180" y="94" font-family="Microsoft YaHei, Arial" font-size="21" font-weight="700" fill="#0f172a">Camera 数据流</text>
+    <text x="180" y="123" font-family="Microsoft YaHei, Arial" font-size="16" fill="#475569">图像序列 · 时间戳 · 标注样本</text>
+    <rect x="180" y="143" width="118" height="24" rx="12" fill="#dbeafe"/><text x="206" y="160" font-family="Arial" font-size="13" fill="#1e40af">Streaming</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="62" y="238" width="416" height="150" rx="20" fill="#fff" stroke="#bfdbfe" stroke-width="2"/>
+    <rect x="86" y="264" width="72" height="72" rx="18" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+    <path d="M96 324l16-26 12 18 10-14 14 22z" fill="url(#blue)"/>
+    <text x="180" y="286" font-family="Microsoft YaHei, Arial" font-size="21" font-weight="700" fill="#0f172a">LiDAR 点云</text>
+    <text x="180" y="315" font-family="Microsoft YaHei, Arial" font-size="16" fill="#475569">三维点云 · 坐标转换 · 稀疏过滤</text>
+    <rect x="180" y="335" width="98" height="24" rx="12" fill="#dbeafe"/><text x="203" y="352" font-family="Arial" font-size="13" fill="#1e40af">Point</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="62" y="430" width="416" height="150" rx="20" fill="#fff" stroke="#bfdbfe" stroke-width="2"/>
+    <rect x="86" y="456" width="72" height="72" rx="18" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+    <path d="M100 492h44M100 506h30M100 480h38" stroke="#2563eb" stroke-width="5" stroke-linecap="round"/>
+    <text x="180" y="478" font-family="Microsoft YaHei, Arial" font-size="21" font-weight="700" fill="#0f172a">车辆状态与场景元数据</text>
+    <text x="180" y="507" font-family="Microsoft YaHei, Arial" font-size="16" fill="#475569">速度 · 位姿 · 天气 · 采集批次</text>
+    <rect x="180" y="527" width="86" height="24" rx="12" fill="#dbeafe"/><text x="202" y="544" font-family="Arial" font-size="13" fill="#1e40af">Meta</text>
+  </g>
+  <g fill="none" stroke="#2563eb" stroke-width="5" marker-end="url(#arrow)">
+    <path d="M478 121h98"/>
+    <path d="M478 313h98"/>
+    <path d="M478 505h98"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="590" y="166" width="246" height="294" rx="24" fill="#fff" stroke="#bfdbfe" stroke-width="2"/>
+    <rect x="620" y="200" width="186" height="48" rx="14" fill="#eff6ff" stroke="#bfdbfe"/>
+    <text x="641" y="231" font-family="Microsoft YaHei, Arial" font-size="18" font-weight="700" fill="#1e3a8a">数据接入层</text>
+    <rect x="620" y="270" width="186" height="48" rx="14" fill="#eff6ff" stroke="#bfdbfe"/>
+    <text x="641" y="301" font-family="Microsoft YaHei, Arial" font-size="18" font-weight="700" fill="#1e3a8a">时空对齐</text>
+    <rect x="620" y="340" width="186" height="48" rx="14" fill="#eff6ff" stroke="#bfdbfe"/>
+    <text x="641" y="371" font-family="Microsoft YaHei, Arial" font-size="18" font-weight="700" fill="#1e3a8a">质量检查</text>
+    <path d="M620 388h186" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="620" y="392" width="78" height="24" rx="12" fill="#dcfce7"/><text x="637" y="409" font-family="Arial" font-size="13" fill="#166534">Pass</text>
+    <rect x="716" y="392" width="90" height="24" rx="12" fill="#ffedd5"/><text x="730" y="409" font-family="Arial" font-size="13" fill="#9a3412">Review</text>
+  </g>
+  <path d="M836 313h98" fill="none" stroke="#2563eb" stroke-width="5" marker-end="url(#arrow)"/>
+  <g filter="url(#shadow)">
+    <rect x="946" y="84" width="268" height="252" rx="24" fill="#fff" stroke="#bfdbfe" stroke-width="2"/>
+    <text x="978" y="124" font-family="Microsoft YaHei, Arial" font-size="20" font-weight="700" fill="#0f172a">可视化分析</text>
+    <rect x="978" y="148" width="204" height="100" rx="14" fill="#f8fafc" stroke="#dbeafe"/>
+    <path d="M998 226l34-32 28 20 32-42 28 30 24-18" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+    <rect x="978" y="268" width="54" height="34" rx="8" fill="#dbeafe"/><rect x="1042" y="268" width="54" height="34" rx="8" fill="#bfdbfe"/><rect x="1106" y="268" width="54" height="34" rx="8" fill="#93c5fd"/>
+    <text x="978" y="322" font-family="Microsoft YaHei, Arial" font-size="14" fill="#64748b">样本分布 · 异常定位 · 检索回放</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="946" y="374" width="268" height="206" rx="24" fill="#fff" stroke="#bfdbfe" stroke-width="2"/>
+    <text x="978" y="414" font-family="Microsoft YaHei, Arial" font-size="20" font-weight="700" fill="#0f172a">可复现数据集</text>
+    <rect x="978" y="438" width="204" height="30" rx="15" fill="#eff6ff"/><rect x="978" y="438" width="151" height="30" rx="15" fill="#2563eb"/>
+    <rect x="978" y="482" width="204" height="30" rx="15" fill="#eff6ff"/><rect x="978" y="482" width="126" height="30" rx="15" fill="#3b82f6"/>
+    <text x="978" y="552" font-family="Microsoft YaHei, Arial" font-size="14" fill="#64748b">版本记录 · 配置文件 · 实验追踪</text>
+  </g>
+  <g>
+    <rect x="62" y="630" width="316" height="44" rx="22" fill="#fff" stroke="#bfdbfe"/>
+    <text x="92" y="658" font-family="Microsoft YaHei, Arial" font-size="16" fill="#1e40af">目标：异常样本快速定位</text>
+    <rect x="402" y="630" width="300" height="44" rx="22" fill="#fff" stroke="#bfdbfe"/>
+    <text x="432" y="658" font-family="Microsoft YaHei, Arial" font-size="16" fill="#1e40af">方法：标准化数据处理流水线</text>
+  </g>
+</svg>
