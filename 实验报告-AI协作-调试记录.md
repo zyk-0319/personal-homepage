@@ -175,22 +175,66 @@ Personal Homepage/
 
 ## 1.9 截图与验证证据
 
-2026-11-05 已重新生成以下桌面端与交互截图：
+2026-11-05 已补充 Chrome、Edge、手机端和平板端最终截图，并统一命名。完整命名对照见 `screenshots/图片命名清单.md`。
 
-| 文件 | 说明 | 状态 |
-|---|---|---|
-| `screenshots/desktop-home.png` | 桌面端首屏 | 已更新 |
-| `screenshots/desktop-projects.png` | 桌面端项目区 | 已更新 |
-| `screenshots/carousel-slide-2.png` | 项目轮播第二张 | 已更新 |
-| `screenshots/form-error.png` | 表单错误提示 | 已更新 |
-| `screenshots/form-success.png` | 表单提交成功 | 已更新 |
-| `screenshots/theme-dark.png` | 桌面端深色主题 | 已更新 |
-| `screenshots/print-preview.png` | 打印预览 | 已更新 |
-| `screenshots/tablet-layout.png` | 平板端布局 | 待用户提供最终截图 |
-| `screenshots/mobile-home.png` | 移动端首屏 | 待用户提供最终截图 |
-| `screenshots/mobile-menu-open.png` | 移动端菜单展开 | 待用户提供最终截图 |
+### Chrome 桌面端
 
-桌面端截图使用无头 Chrome 以 1365×1000 视口生成；打印预览来自无头 Chrome 生成的 PDF 第一页。平板端和移动端将补充真实设备截图，避免仅使用浏览器模拟结果。
+| 文件 | 内容 |
+|---|---|
+| `screenshots/chrome-01-home.png` | Chrome 首页首屏 |
+| `screenshots/chrome-02-about.png` | Chrome 关于我 |
+| `screenshots/chrome-03-projects.png` | Chrome 项目与实践 |
+| `screenshots/chrome-04-blog.png` | Chrome 博客与学习记录 |
+| `screenshots/chrome-05-contact-form.png` | Chrome 联系表单初始状态 |
+| `screenshots/chrome-06-form-error.png` | Chrome 表单校验错误 |
+| `screenshots/chrome-07-form-success.png` | Chrome 表单提交成功 |
+| `screenshots/chrome-08-theme-dark.png` | Chrome 深色主题 |
+
+### Edge 桌面端
+
+| 文件 | 内容 |
+|---|---|
+| `screenshots/edge-01-home.png` | Edge 首页首屏 |
+| `screenshots/edge-02-about.png` | Edge 关于我 |
+| `screenshots/edge-03-projects.png` | Edge 项目与实践 |
+| `screenshots/edge-04-blog.png` | Edge 博客与学习记录 |
+| `screenshots/edge-05-contact-form.png` | Edge 联系表单初始状态 |
+| `screenshots/edge-06-form-error.png` | Edge 表单校验错误 |
+| `screenshots/edge-07-form-success.png` | Edge 表单提交成功 |
+| `screenshots/edge-08-theme-dark.png` | Edge 深色主题 |
+
+### 桌面交互
+
+| 文件 | 内容 |
+|---|---|
+| `screenshots/carousel-slide-2.png` | 项目轮播第二张 |
+
+### 手机端
+
+| 文件 | 内容 |
+|---|---|
+| `screenshots/mobile-01-home.png` | 手机端首页首屏 |
+| `screenshots/mobile-02-about.png` | 手机端关于我 |
+| `screenshots/mobile-03-project-perception.png` | 手机端项目区环境感知平台 |
+| `screenshots/mobile-04-blog.png` | 手机端博客与学习记录 |
+| `screenshots/mobile-05-contact-form.png` | 手机端联系表单初始状态 |
+| `screenshots/mobile-06-menu-open.png` | 手机端汉堡菜单展开状态 |
+| `screenshots/mobile-07-form-error.png` | 手机端表单校验错误 |
+| `screenshots/mobile-08-form-success.png` | 手机端表单提交成功 |
+| `screenshots/mobile-09-theme-dark.png` | 手机端深色主题 |
+
+### 平板端
+
+| 文件 | 内容 |
+|---|---|
+| `screenshots/tablet-01-home.png` | 平板端首页首屏 |
+| `screenshots/tablet-02-about.png` | 平板端关于我 |
+| `screenshots/tablet-03-project-perception.png` | 平板端项目区环境感知架构图 |
+| `screenshots/tablet-04-blog.png` | 平板端博客与学习记录 |
+| `screenshots/tablet-05-contact-form.png` | 平板端联系表单初始状态 |
+| `screenshots/tablet-06-form-success.png` | 平板端表单提交成功 |
+| `screenshots/tablet-07-form-error.png` | 平板端表单校验错误 |
+| `screenshots/tablet-08-theme-dark.png` | 平板端深色主题 |
 
 ## 1.10 验收结论
 
@@ -204,6 +248,7 @@ Personal Homepage/
 | 无明显控制台报错 | 最近无头 Chrome 页面加载探针未捕获运行错误 |
 | 图片有尺寸和替代文本 | 已实现 |
 | AI 辅助开发但人工验收 | 已在第二部分记录 |
+| 浏览器与设备适配证据 | 已补充 Chrome、Edge、手机端和平板端真实截图 |
 | 保留调试记录 | 已在第三部分记录 |
 | 不泄露 API Key 或敏感隐私 | 已检查，未包含 |
 
@@ -215,7 +260,7 @@ Personal Homepage/
 4. 三个项目卡片当前均链接到 GitHub 主页，后续可为每个项目创建独立仓库或说明页。
 5. `localStorage` 在极少数隐私模式或本机限制环境中可能不可用，后续可增加安全读写兜底。
 6. 移动菜单已支持 `Esc` 关闭，后续可进一步增强焦点循环管理。
-7. 桌面端与交互截图已更新；平板端和移动端最终设备截图待补充。
+7. Chrome、Edge、手机端和平板端最终截图已补充完成。
 
 ---
 

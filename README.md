@@ -54,18 +54,56 @@ Personal Homepage/
 
 ## 验收截图
 
-`screenshots/` 目录中的桌面端与交互截图已于 2026-11-05 更新：
+`screenshots/` 目录已按浏览器、桌面交互、手机端和平板端统一命名。完整对照见 `screenshots/图片命名清单.md`。
 
-- `desktop-home.png`：桌面端首屏
-- `desktop-projects.png`：桌面端项目区
+### Chrome 桌面端
+
+- `chrome-01-home.png`：首页首屏
+- `chrome-02-about.png`：关于我
+- `chrome-03-projects.png`：项目与实践
+- `chrome-04-blog.png`：博客与学习记录
+- `chrome-05-contact-form.png`：联系表单初始状态
+- `chrome-06-form-error.png`：表单校验错误
+- `chrome-07-form-success.png`：表单提交成功
+- `chrome-08-theme-dark.png`：深色主题
+
+### Edge 桌面端
+
+- `edge-01-home.png`：首页首屏
+- `edge-02-about.png`：关于我
+- `edge-03-projects.png`：项目与实践
+- `edge-04-blog.png`：博客与学习记录
+- `edge-05-contact-form.png`：联系表单初始状态
+- `edge-06-form-error.png`：表单校验错误
+- `edge-07-form-success.png`：表单提交成功
+- `edge-08-theme-dark.png`：深色主题
+
+### 桌面交互
+
 - `carousel-slide-2.png`：项目轮播第二张
-- `form-error.png`：表单错误提示
-- `form-success.png`：表单提交成功
-- `theme-dark.png`：桌面端深色主题
-- `print-preview.png`：打印预览
-- `tablet-layout.png`：平板端布局（待替换为最终设备截图）
-- `mobile-home.png`：移动端首屏（待替换为最终设备截图）
-- `mobile-menu-open.png`：移动端汉堡菜单展开状态（待替换为最终设备截图）
+
+### 手机端
+
+- `mobile-01-home.png`：首页首屏
+- `mobile-02-about.png`：关于我
+- `mobile-03-project-perception.png`：项目区环境感知平台
+- `mobile-04-blog.png`：博客与学习记录
+- `mobile-05-contact-form.png`：联系表单初始状态
+- `mobile-06-menu-open.png`：汉堡菜单展开状态
+- `mobile-07-form-error.png`：表单校验错误
+- `mobile-08-form-success.png`：表单提交成功
+- `mobile-09-theme-dark.png`：深色主题
+
+### 平板端
+
+- `tablet-01-home.png`：首页首屏
+- `tablet-02-about.png`：关于我
+- `tablet-03-project-perception.png`：项目区环境感知架构图
+- `tablet-04-blog.png`：博客与学习记录
+- `tablet-05-contact-form.png`：联系表单初始状态
+- `tablet-06-form-success.png`：表单提交成功
+- `tablet-07-form-error.png`：表单校验错误
+- `tablet-08-theme-dark.png`：深色主题
 
 ## 验收检查
 
