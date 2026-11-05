@@ -175,20 +175,22 @@ Personal Homepage/
 
 ## 1.9 截图与验证证据
 
-当前 `screenshots/` 目录已有以下证据：
+2026-11-05 已重新生成以下桌面端与交互截图：
 
-| 文件 | 说明 |
-|---|---|
-| `screenshots/desktop-home.png` | 桌面端首屏 |
-| `screenshots/desktop-projects.png` | 桌面端项目区 |
-| `screenshots/tablet-layout.png` | 平板端布局 |
-| `screenshots/mobile-home.png` | 移动端首屏 |
-| `screenshots/mobile-menu-open.png` | 移动端菜单展开 |
-| `screenshots/form-error.png` | 表单错误提示 |
-| `screenshots/form-success.png` | 表单提交成功 |
-| `screenshots/theme-dark.png` | 深色主题 |
+| 文件 | 说明 | 状态 |
+|---|---|---|
+| `screenshots/desktop-home.png` | 桌面端首屏 | 已更新 |
+| `screenshots/desktop-projects.png` | 桌面端项目区 | 已更新 |
+| `screenshots/carousel-slide-2.png` | 项目轮播第二张 | 已更新 |
+| `screenshots/form-error.png` | 表单错误提示 | 已更新 |
+| `screenshots/form-success.png` | 表单提交成功 | 已更新 |
+| `screenshots/theme-dark.png` | 桌面端深色主题 | 已更新 |
+| `screenshots/print-preview.png` | 打印预览 | 已更新 |
+| `screenshots/tablet-layout.png` | 平板端布局 | 待用户提供最终截图 |
+| `screenshots/mobile-home.png` | 移动端首屏 | 待用户提供最终截图 |
+| `screenshots/mobile-menu-open.png` | 移动端菜单展开 | 待用户提供最终截图 |
 
-其中部分截图生成于 `project-fusion.svg` 和 `project-planning.svg` 最新修复之前。提交前建议重新截取项目轮播第二、第三张，以及最终版桌面、平板、移动端和深色模式截图。
+桌面端截图使用无头 Chrome 以 1365×1000 视口生成；打印预览来自无头 Chrome 生成的 PDF 第一页。平板端和移动端将补充真实设备截图，避免仅使用浏览器模拟结果。
 
 ## 1.10 验收结论
 
@@ -213,7 +215,7 @@ Personal Homepage/
 4. 三个项目卡片当前均链接到 GitHub 主页，后续可为每个项目创建独立仓库或说明页。
 5. `localStorage` 在极少数隐私模式或本机限制环境中可能不可用，后续可增加安全读写兜底。
 6. 移动菜单已支持 `Esc` 关闭，后续可进一步增强焦点循环管理。
-7. 需要在最终提交前重新生成最新项目区截图。
+7. 桌面端与交互截图已更新；平板端和移动端最终设备截图待补充。
 
 ---
 

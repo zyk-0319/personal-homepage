@@ -54,16 +54,18 @@ Personal Homepage/
 
 ## 验收截图
 
-`screenshots/` 目录中已包含：
+`screenshots/` 目录中的桌面端与交互截图已于 2026-11-05 更新：
 
 - `desktop-home.png`：桌面端首屏
 - `desktop-projects.png`：桌面端项目区
-- `tablet-layout.png`：平板端布局
-- `mobile-home.png`：移动端首屏
-- `mobile-menu-open.png`：移动端汉堡菜单展开状态
+- `carousel-slide-2.png`：项目轮播第二张
 - `form-error.png`：表单错误提示
 - `form-success.png`：表单提交成功
-- `theme-dark.png`：深色主题
+- `theme-dark.png`：桌面端深色主题
+- `print-preview.png`：打印预览
+- `tablet-layout.png`：平板端布局（待替换为最终设备截图）
+- `mobile-home.png`：移动端首屏（待替换为最终设备截图）
+- `mobile-menu-open.png`：移动端汉堡菜单展开状态（待替换为最终设备截图）
 
 ## 验收检查
 
