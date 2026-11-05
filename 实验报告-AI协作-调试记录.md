@@ -167,7 +167,7 @@ Personal Homepage/
 
 页面包含中文页面标题、描述、作者、索引设置、浅深色浏览器主题色、头像 favicon、Apple 触屏图标和 `schema.org` 的 `Person` 结构化数据。结构化数据中包含姓名、职业身份、学校、研究方向关键词、学校邮箱、GitHub 和博客文章。
 
-当前项目尚未部署，因此没有添加依赖正式 URL 的 `canonical` 和 Open Graph 地址。后续部署到 GitHub Pages 或 Vercel 后，应补充完整分享链接。
+页面已部署到 GitHub Pages，但尚未添加依赖正式 URL 的 `canonical` 和 Open Graph 地址。后续可基于该正式 URL 补充完整分享链接。
 
 ### 隐私与安全
 
@@ -207,8 +207,8 @@ Personal Homepage/
 
 ## 1.11 已知限制与后续改进
 
-1. 页面尚未部署，缺少公开访问链接。
-2. 部署后需要补充 `canonical`、Open Graph 和社交分享图。
+1. 页面已部署到 GitHub Pages，可在手机、平板和电脑浏览器访问。
+2. 尚未添加 `canonical`、Open Graph 和社交分享图，可基于正式 URL 继续补充。
 3. 当前只找到一篇真实 CSDN 博客链接，未编造额外文章。
 4. 三个项目卡片当前均链接到 GitHub 主页，后续可为每个项目创建独立仓库或说明页。
 5. `localStorage` 在极少数隐私模式或本机限制环境中可能不可用，后续可增加安全读写兜底。
@@ -675,8 +675,8 @@ document.addEventListener("keydown", (event) => {
 1. 重新截取最新项目轮播第二、第三张截图。
 2. 在 Chrome 和 Edge 中分别检查导航、轮播、表单、主题和移动菜单。
 3. 如条件允许，用 Android/iPhone 真机检查触控和横向滚动。
-4. 部署后开 GitHub Pages，并在报告中加入在线链接。
-5. 部署后补充 `canonical`、Open Graph 和社交分享图。
+4. 使用正式在线地址复查页面、站点图标和资源加载。
+5. 补充 `canonical`、Open Graph 和社交分享图。
 6. 使用结构化数据校验工具检查 `Person`。
 7. 打包前确认未包含 API Key、手机号、住址等敏感信息。
 8. 确认临时探针文件和无头浏览器配置目录未残留在提交包中。

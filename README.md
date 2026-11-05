@@ -2,6 +2,10 @@
 
 这是一个智能驾驶方向研究生个人主页课外实验项目，使用 HTML5、CSS3 和原生 JavaScript 实现，无第三方框架和外部依赖。
 
+## 在线地址
+
+<https://zyk-0319.github.io/personal-homepage/>
+
 ## 项目结构
 
 ```text
@@ -12,6 +16,7 @@ Personal Homepage/
 ├─ assets/         头像、项目占位图与站点图标
 ├─ package.json    最小项目信息
 ├─ screenshots/    桌面端、平板端、移动端与关键交互截图
+├─ 实验报告-AI协作-调试记录.md 实验报告、AI协作记录与调试记录
 └─ README.md       项目说明
 ```
 
@@ -37,7 +42,7 @@ Personal Homepage/
 
 ## SEO 与站点图标
 
-页面已包含页面描述、作者、索引设置、头像站点图标和 `schema.org` 的 `Person` 结构化数据。项目没有公开地址，因此暂未添加 `canonical` 或 Open Graph 绝对地址；部署后如需社交分享卡片，应补上正式 URL。
+页面已包含页面描述、作者、索引设置、头像站点图标和 `schema.org` 的 `Person` 结构化数据。页面已部署到 GitHub Pages，但尚未添加 `canonical` 或 Open Graph 绝对地址；后续如需社交分享卡片，应基于该正式 URL 补充。
 
 ## 部署到 GitHub Pages 示例
 
