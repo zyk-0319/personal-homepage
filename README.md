@@ -13,7 +13,7 @@ Personal Homepage/
 ├─ index.html      页面结构
 ├─ style.css       样式、布局、响应式适配与动效
 ├─ script.js       导航、轮播、表单校验、主题切换逻辑
-├─ assets/         头像、项目占位图与站点图标
+├─ assets/         头像、项目示意图、社交分享图与站点图标
 ├─ package.json    最小项目信息
 ├─ screenshots/    桌面端、平板端、移动端与关键交互截图
 ├─ 制作说明文档.md 实验报告、AI协作记录与调试记录
@@ -30,7 +30,7 @@ Personal Homepage/
 - 根据当前浏览区域自动高亮导航项
 - 移动端汉堡菜单，点击菜单项后自动收起
 - 项目轮播，支持上一张/下一张、指示点、键盘方向键与触摸滑动切换
-- 联系表单基础校验、无效输入状态、首个错误项聚焦与“已收到留言”提示
+- 联系表单基础校验、无效输入状态、首个错误项聚焦与“已收到留言”提示，重新输入时自动清除旧成功提示
 - 浅色/深色主题切换，并通过 localStorage 记住偏好
 - 桌面端、平板端、移动端响应式布局
 - 锚点跳转预留固定导航间距，长文本自动换行不撑破卡片
@@ -38,11 +38,11 @@ Personal Homepage/
 - “跳到主要内容”链接、当前导航状态与深浅主题下的表单提示配色
 - 图片尺寸提示、异步解码、头像 WebP 优先加载与脚本 defer 加载
 - 键盘焦点样式、轮播键盘可达性、Esc 关闭移动端菜单、外链打开方式提示与打印友好样式
-- 站点图标、基础 SEO 元数据与 Person 结构化数据
+- 站点图标、canonical、Open Graph/Twitter 分享信息与 Person 结构化数据
 
 ## SEO 与站点图标
 
-页面已包含页面描述、作者、索引设置、头像站点图标和 `schema.org` 的 `Person` 结构化数据。页面已部署到 GitHub Pages，但尚未添加 `canonical` 或 Open Graph 绝对地址；后续如需社交分享卡片，应基于该正式 URL 补充。
+页面已包含页面标题与描述、作者、索引设置、canonical、Open Graph、Twitter Card、头像站点图标，以及使用正式绝对地址的 `schema.org` 的 `Person` 结构化数据。`assets/social-share.png` 为 1200×630 社交分享图，已配置为 Open Graph 和 Twitter 分享图片。正式地址为 `https://zyk-0319.github.io/personal-homepage/`。
 
 ## 部署到 GitHub Pages 示例
 
@@ -126,6 +126,8 @@ Personal Homepage/
 10. 使用浏览器打印预览，确认页面为黑白布局、项目卡片不跨页断裂且链接地址可见。
 11. 确认浏览器标签页显示头像图标。
 12. 部署后使用结构化数据校验工具确认 `Person` 信息可解析。
+13. 表单提交成功后重新输入内容，确认旧的“已收到留言”提示自动清除。
+14. 使用社交分享调试工具确认 canonical、Open Graph、Twitter Card 和分享图片能被正确读取。
 
 
 

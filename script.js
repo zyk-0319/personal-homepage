@@ -192,7 +192,10 @@ function validateField(fieldName) {
 }
 
 Object.keys(fields).forEach((fieldName) => {
-  fields[fieldName].addEventListener("input", () => setFieldState(fieldName, ""));
+  fields[fieldName].addEventListener("input", () => {
+    formStatus.textContent = "";
+    setFieldState(fieldName, "");
+  });
 });
 
 form.addEventListener("submit", (event) => {
