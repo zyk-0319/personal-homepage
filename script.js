@@ -10,6 +10,7 @@ const slides = document.querySelectorAll(".project-card");
 const dotsContainer = document.querySelector(".carousel-dots");
 const form = document.getElementById("contact-form");
 const formStatus = document.getElementById("form-status");
+const submitButton = form.querySelector('button[type="submit"]');
 
 /* ===== 主题切换与偏好记忆 ===== */
 function getPreferredTheme() {
@@ -194,12 +195,15 @@ function validateField(fieldName) {
 Object.keys(fields).forEach((fieldName) => {
   fields[fieldName].addEventListener("input", () => {
     formStatus.textContent = "";
+    formStatus.classList.remove("is-error");
     setFieldState(fieldName, "");
   });
 });
 
-form.addEventListener("submit", (event) => {
+form.addEventListener("submit", async (event) => {
   event.preventDefault();
+  if (submitButton.disabled) return;
+
   let firstInvalidField = null;
   let isValid = true;
 
@@ -213,12 +217,37 @@ form.addEventListener("submit", (event) => {
     }
   });
 
-  if (isValid) {
-    form.reset();
-    formStatus.textContent = "已收到留言";
-  } else {
+  if (!isValid) {
     formStatus.textContent = "";
     firstInvalidField.focus();
+    return;
+  }
+
+  submitButton.disabled = true;
+  submitButton.textContent = "正在发送…";
+  formStatus.classList.remove("is-error");
+  formStatus.textContent = "正在发送…";
+
+  try {
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { Accept: "application/json" },
+    });
+
+    if (!response.ok) {
+      throw new Error(`Formspree request failed: ${response.status}`);
+    }
+
+    form.reset();
+    formStatus.textContent = "已收到留言";
+  } catch (error) {
+    console.error("Formspree submission failed:", error);
+    formStatus.classList.add("is-error");
+    formStatus.textContent = "发送失败，请稍后重试或直接发送邮件至 26126191@bjtu.edu.cn。";
+  } finally {
+    submitButton.disabled = false;
+    submitButton.textContent = "发送留言";
   }
 });
 

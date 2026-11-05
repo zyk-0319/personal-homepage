@@ -162,7 +162,8 @@
 
     <section id="contact" class="section visible">
       <h2>联系我</h2>
-      <form id="contact-form" class="contact-form" novalidate="">
+      <form id="contact-form" class="contact-form" action="https://formspree.io/f/mkjjyyzy" method="post" novalidate="">
+        <input type="hidden" name="_subject" value="个人主页新留言">
         <label for="name">姓名</label>
         <input id="name" name="name" type="text" autocomplete="name" aria-describedby="name-error" placeholder="请输入姓名">
         <p class="error-message" id="name-error" aria-live="polite"></p>

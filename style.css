@@ -190,6 +190,7 @@ main { width: min(1120px, 100% - 2rem); margin: auto; }
 html.dark-theme .button.primary { color: #0f172a; }
 .button.secondary { border: 1px solid var(--accent); color: var(--accent); background: transparent; }
 .button:hover, .button:focus-visible { transform: translateY(-2px); box-shadow: var(--shadow); }
+.button:disabled { cursor: wait; opacity: .7; transform: none; box-shadow: none; }
 
 .about-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 .about-card, .blog-card, .project-card {
@@ -305,6 +306,7 @@ html.dark-theme .button.primary { color: #0f172a; }
 
 .error-message { min-height: 1.3rem; margin: 0; color: var(--error); font-size: .9rem; }
 .form-status { grid-column: 2; min-height: 1.5rem; margin: 0; color: var(--success); font-weight: 600; }
+.form-status.is-error { color: var(--error); }
 
 .site-footer {
   border-top: 1px solid var(--border);
