@@ -16,7 +16,7 @@ Personal Homepage/
 ├─ assets/         头像、项目占位图与站点图标
 ├─ package.json    最小项目信息
 ├─ screenshots/    桌面端、平板端、移动端与关键交互截图
-├─ 实验报告-AI协作-调试记录.md 实验报告、AI协作记录与调试记录
+├─ 制作说明文档.md 实验报告、AI协作记录与调试记录
 └─ README.md       项目说明
 ```
 
