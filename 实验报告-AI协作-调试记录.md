@@ -236,6 +236,15 @@ Personal Homepage/
 | `screenshots/tablet-07-form-error.png` | 平板端表单校验错误 |
 | `screenshots/tablet-08-theme-dark.png` | 平板端深色主题 |
 
+### 部署与调试证据
+
+| 文件 | 内容 |
+|---|---|
+| `screenshots/deployed-url.png` | 部署后的在线地址与浏览器界面 |
+| `screenshots/devtools-console.png` | DevTools Console 无报错 |
+| `screenshots/devtools-network.png` | DevTools Network 资源加载 |
+| `screenshots/print-preview.png` | 打印预览 |
+
 ## 1.10 验收结论
 
 按课程要求逐项检查：
@@ -249,6 +258,7 @@ Personal Homepage/
 | 图片有尺寸和替代文本 | 已实现 |
 | AI 辅助开发但人工验收 | 已在第二部分记录 |
 | 浏览器与设备适配证据 | 已补充 Chrome、Edge、手机端和平板端真实截图 |
+| DevTools 与打印验证 | 已截图 Console、Network 和打印预览 |
 | 保留调试记录 | 已在第三部分记录 |
 | 不泄露 API Key 或敏感隐私 | 已检查，未包含 |
 
@@ -260,7 +270,7 @@ Personal Homepage/
 4. 三个项目卡片当前均链接到 GitHub 主页，后续可为每个项目创建独立仓库或说明页。
 5. `localStorage` 在极少数隐私模式或本机限制环境中可能不可用，后续可增加安全读写兜底。
 6. 移动菜单已支持 `Esc` 关闭，后续可进一步增强焦点循环管理。
-7. Chrome、Edge、手机端和平板端最终截图已补充完成。
+7. Chrome、Edge、手机端、平板端、DevTools Console/Network 和打印预览截图已补充完成。
 
 ---
 

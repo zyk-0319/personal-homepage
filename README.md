@@ -105,6 +105,13 @@ Personal Homepage/
 - `tablet-07-form-error.png`：表单校验错误
 - `tablet-08-theme-dark.png`：深色主题
 
+### 部署与调试证据
+
+- `deployed-url.png`：部署后的在线地址
+- `devtools-console.png`：DevTools Console 无报错
+- `devtools-network.png`：DevTools Network 资源加载
+- `print-preview.png`：打印预览
+
 ## 验收检查
 
 1. 点击导航项能滚动到对应区域。
